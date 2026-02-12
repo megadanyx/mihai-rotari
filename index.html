@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihai Rotari portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="./css/port_css.css" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+                <text y='0.9em' font-size='95'>🧑🏼‍💼</text>
+                </svg>">
+
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <div class="theme-option" id="light-mode" title="Light Mode">☀️</div>
+        <div class="theme-option active" id="dark-mode" title="Dark Mode">🌙</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo"><a class="mylogo" href="#home">Mihai Rotari</a></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2 id="hello-text"></h2>
+            <h1 id="name-text"></h1>
+            <p class="roles" id="roles-text"></p>
+            <p>
+                Passionate about building modern, scalable applications and robust data pipelines. 
+                With expertise in full-stack development and data engineering, 
+                I create innovative solutions that drive business value and technical excellence.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="section-subtitle">
+                Comprehensive skill set spanning software development, data engineering, and Data analityc.
+            </p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻 🗄️</div>
+                    <h3>Software Development &<br>Databases</h3>
+                    <p>
+                        Building scalable applications with clean architecture and modern frameworks.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Php</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">MSSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">SQL Lite</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Frameworks</h3>
+                    <p>
+                        Infrastructure automation, containerization, and cloud-native architectures.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Django-rest-framework</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Codeigniter 4</span>
+                        <span class="tag">Pygame</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">React</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">📊 📈</div>
+                    <h3>Data Engineering &<br> Data Analytics</h3>
+                    <p>
+                        Designing and implementing robust ETL pipelines and data warehousing solutions.<br>
+                        Advanced analytics and visualization for data-driven decision making.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Excel</span>
+                        <span class="tag">Docx</span>
+                        <span class="tag">Elasticsearch</span>
+                        <!-- <span class="tag">Kafka</span> -->
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="background: var(--bg);">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+                A showcase of recent projects demonstrating full-stack development and data engineering capabilities.
+            </p>
+            <div class="projects-grid">
+            <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #c30bd8 0%, #fd7285 100%);">
+                        📖
+                        <!-- <img src="images/dvsexpert_2.png" alt="DVS-Expert" width="250"> -->
+                    </div>
+                    <div class="project-content">
+                        <h3>Website DVS-Expert</h3>
+                        <p>
+                            This is a website for a company that offers training courses across different fields.
+                            Its purpose is to showcase the available courses, including their prices, course descriptions, curricula, and instructors.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://dvcexpert.onrender.com/"  target="_blank" class="project-link">View Demo</a>
+                            <a href="https://github.com/megadanyx/DVC-Expert/tree/main/DCVExpert" target="_blank" class="project-link secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        📊
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Pipeline</h3>
+                        <p>
+                            Built a scalable ETL pipeline processing events daily with real-time 
+                            analytics and automated send report to emails.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Docx</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/megadanyx/data_etl/blob/main/README.md" target="_blank" class="project-link">View Details</a>
+                            <a href="https://github.com/megadanyx/data_etl" target="_blank" class="project-link secondary">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #dd8e17 0%, #63f338 100%);">
+                        💳
+                    </div>
+                    <div class="project-content">
+                        <h3>MyPos Point of Sale</h3>
+                        <p>
+                               MyPos is a web-based point of sale system. 
+                               The application is written in PHP, uses MySQL (or MariaDB) as the data storage back-end, 
+                               and has a simple but intuitive user interface.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tag">Php</span>
+                            <span class="tag">Codeigniter 4</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript(AJAX)</span>
+                            <!-- <span class="tag">AJAX</span> -->
+                        </div>
+                        <div class="project-links">
+                            <a href="https://natidibrio.eu/" target="_blank" class="project-link">Explore</a>
+                            <a title="The source code for this project is not publicly available due to copyright restrictions." href="#" class="project-link secondary backend-disabled">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">
+                Interested in collaboration or have a project in mind? Let's discuss how we can work together.
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:mihai.rotari.nicolai@gmail.com">mihai.rotari.nicolai@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+37368762322">+373 (68) 76-23-22</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/mihai-rotari-324141201" target="_blank">linkedin.com/in/mihai-rotari</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🐙</div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/megadanyx" target="_blank">github.com/mihai-rotari</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/mwvnlvlr" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mihai Rotari All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+            const lightMode = document.getElementById('light-mode');
+            const darkMode = document.getElementById('dark-mode');
+            
+            if (currentTheme === 'dark') {
+                body.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                lightMode.classList.add('active');
+                darkMode.classList.remove('active');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                darkMode.classList.add('active');
+                lightMode.classList.remove('active');
+            }
+        }
+
+        // Load saved theme on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            const lightMode = document.getElementById('light-mode');
+            const darkMode = document.getElementById('dark-mode');
+                // Start typing animation
+                
+                if (savedTheme === 'light') {
+                    document.body.removeAttribute('data-theme');
+                    lightMode.classList.add('active');
+                    darkMode.classList.remove('active');
+                } else {
+                    document.body.setAttribute('data-theme', 'dark');
+                    darkMode.classList.add('active');
+                    lightMode.classList.remove('active');
+                }
+            typeWriter('hello-text', "Hello! 👋", 80, function() {
+
+                typeWriter('name-text',"I'm Mihai Rotari", 90, function() {
+                typeWriter('roles-text', 'Software Engineer | Data Engineer | Developer', 35);
+                });
+            });
+        });
+
+        // Form submission handler
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Message sent! (This is a demo - add backend functionality for actual submission)');
+            event.target.reset();
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        // Typing Animation Function
+        function typeWriter(elementId, text, speed, callback) {
+                let i = 0;
+                const element = document.getElementById(elementId);
+                element.innerHTML = '';
+                
+                function type() {
+                    if (i < text.length) {
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(type, speed);
+                    } else if (callback) {
+                        setTimeout(callback, 500); // Pauză înainte de următorul text
+                    }
+                }
+                type();
+        }
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-card, .project-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
